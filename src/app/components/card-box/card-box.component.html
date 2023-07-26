@@ -1,29 +1,29 @@
 <div class="card-container shadow-box">
-<div class="card-logo">
-    <app-logo-white logoWidth="140" />
-</div>
+    <div class="card-logo">
+        <app-logo-white logoWidth="140" />
+    </div>
 
-<div class="card-middle">
-    <img src="../../../assets/chip.png" width="80px" alt="chip" class="card-img">
-    <div class="card-number">
-        <p>XXXX</p>
-        <p>XXXX</p>
-        <p>XXXX</p>
-        <p>{{accountData.card.number}}</p>
+    <div class="card-middle">
+        <img src="../../../assets/chip.png" width="80px" alt="chip" class="card-img">
+        <div class="card-number">
+            <p>XXXX</p>
+            <p>XXXX</p>
+            <p>XXXX</p>
+            <p>{{accountData.card.number}}</p>
+        </div>
     </div>
-</div>
-<div class="card-footer">
-    <div class="footer-data">
-        <p>AG {{accountData.account.agency}}</p>
-        <p>CC {{accountData.account.number}}</p>
+    <div class="card-footer-2">
+        <div class="footer-data-2">
+            <p>BEM VINDO, {{accountData.name}}</p>
+        </div>
     </div>
-</div>
-<div>
-    <div class="footer-data">
-        <p>BEM VINDO, {{accountData.name}}</p>
+    <div class="card-footer">
+        <div class="footer-data">
+            <p>AG {{accountData.account.agency}}</p>
+            <p>CC {{accountData.account.number}}</p>
+        </div>
     </div>
-</div>
-<div class="card-limit">
-    <p>Limit: {{accountData.card.limit}},00</p>
-</div>
+    <div class="card-limit">
+        <p>Limite: {{accountData.card.limit}},00</p>
+    </div>
 </div>
