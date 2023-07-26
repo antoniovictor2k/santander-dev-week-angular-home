@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'app-search-logo',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 	styleUrls: []
 })
 export class SearchLogoComponent {
-
+	@Input() logoWidth: string = "250"
 }

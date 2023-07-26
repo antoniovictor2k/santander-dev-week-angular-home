@@ -11,23 +11,28 @@ import { HeaderComponent } from './components/header/header.component';
 import { CardBoxComponent } from './components/card-box/card-box.component';
 import { CarouselItemsComponent } from './components/carousel-items/carousel-items.component';
 import { AmountBoxComponent } from './components/amount-box/amount-box.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-    HomeComponent,
-    HeaderComponent,
-    CardBoxComponent,
-    CarouselItemsComponent,
-    AmountBoxComponent,
+		HomeComponent,
+		HeaderComponent,
+		CardBoxComponent,
+		CarouselItemsComponent,
+		AmountBoxComponent,
+
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		SvgComponentsModule,
-		HttpClientModule
+		HttpClientModule,
+		BrowserAnimationsModule,
+		MatIconModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent]
 })
-export class AppModule{ }
+export class AppModule { }

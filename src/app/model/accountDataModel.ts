@@ -3,9 +3,14 @@ export interface AccountDataModel {
     account:{
         agency: string
         number: string
+        saldo: number
     };
     card:{
         limit: number
         number:string
-    }
+    };
+    saldo_limit:{
+        saldo: string
+    };
+   
 }

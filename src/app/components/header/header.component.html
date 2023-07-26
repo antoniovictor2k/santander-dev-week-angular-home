@@ -1,22 +1,36 @@
 <header>
-    
-        <div>
 
-            <app-logo-white logoWidth='180' />
-        </div>
-        
-        <div class="search-box">
-            <div class="search-box-text">
-                <input type="search" name="pesquisar" placeholder="Digite aqui sua buscar" id="search-box-input">
-                <app-search-logo></app-search-logo>
+    <div>
+
+        <app-logo-white logoWidth='180' />
+    </div>
+
+    <div class="search-box">
+        <div class="search-box-text">
+            <input type="search" name="pesquisar" placeholder="Digite aqui sua buscar" id="search-box-input">
+            <div class="search-logo">
+
+                <app-search-logo />
             </div>
         </div>
-        
+    </div>
 
-        <div class="icones-box">
-            <app-bell-icon></app-bell-icon>
-            <app-user-icon></app-user-icon>
+    <div class="saldo-box">
+        <p>Saldo + limite</p>
+        <div class="saldo">
+            <p class="display-saldo">{{saldoFormatado}}</p>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="visibility"></mat-icon>
         </div>
-      
-        
+    </div>
+
+    <div class="icones-box">
+        <div class="user-login">
+
+            <app-user-icon />
+            <p>Entrar/Sair</p>
+        </div>
+
+    </div>
+
+
 </header>

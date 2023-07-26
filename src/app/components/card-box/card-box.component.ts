@@ -17,13 +17,20 @@ export class CardBoxComponent implements OnInit {
     name: "",
     account:{
       agency: "0001",
-      number: "124541454"
+      number: "124541454",
+      saldo:0
     },
     card:{
       limit: 1500,
       number: "4454"
-    }
+    },
+    saldo_limit:{
+      saldo:" 0"
+  },
   }
+
+  limitFormatado: string | undefined;
+
   ngOnInit(): void {
    this.getAccountData();
   }
@@ -35,7 +42,11 @@ export class CardBoxComponent implements OnInit {
       this.accountData.account.number = data.account.number
       this.accountData.card.limit = data.card.limit
       this.accountData.card.number = data.card.number.split(" ")[3]
+      this.formatarSaldo();
     })
   }
-  
+  formatarSaldo() {
+    const saldoNumero = parseFloat(this.accountData.card.limit.toString()); // Convertendo o saldo para um número
+    this.limitFormatado = saldoNumero.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  }
 }
