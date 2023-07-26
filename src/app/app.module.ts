@@ -6,10 +6,12 @@ import { SvgComponentsModule } from './modules/svg-components.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
+  		CardComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -18,6 +20,6 @@ import { AppComponent } from './app.component';
 		HttpClientModule
 	],
 	providers: [],
-	bootstrap: [AppComponent]
+	bootstrap: [AppComponent, CardComponent]
 })
-export class AppModule { }
+export class AppModule{ }
