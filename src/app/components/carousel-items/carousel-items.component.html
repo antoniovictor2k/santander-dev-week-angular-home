@@ -1,1 +1,11 @@
-<p>carousel-items works!</p>
+<div class="slider-container">
+    <ngx-slick-carousel #slickCarousel="slick-carousel" [config]="slideConfig" class="carousel">
+      <div class="slide" *ngFor="let card of cards">
+        <div class="card" [class.active]="card.active" (click)="toggleCard(card)">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.content }}</p>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+  

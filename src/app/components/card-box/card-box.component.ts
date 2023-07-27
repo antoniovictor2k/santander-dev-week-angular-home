@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AccountDataModel } from 'src/app/model/accountDataModel';
 import { CardsService } from 'src/app/services/cards.service';
 
+
 @Component({
   selector: 'app-card-box',
   templateUrl: './card-box.component.html',

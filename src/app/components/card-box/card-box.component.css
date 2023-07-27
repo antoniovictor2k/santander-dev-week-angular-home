@@ -1,3 +1,7 @@
+header{
+    position: fixed;
+    z-index: 9999;
+  }
 .card-container {
     background-color: #e31918;
     color: #fff;
@@ -9,13 +13,11 @@
 
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
 
 }
 
 .card-logo {
-    /* margin-left: 200px; */
+    
     margin-top: -25px;
     margin-bottom: -20px;
 
@@ -60,7 +62,6 @@
     flex-direction: row;
     gap: 6px;
     flex-wrap: wrap;
-    /* border: solid 1px white; */
 
 }
 
@@ -70,7 +71,6 @@
     display: flex;
     flex-direction: row;
 
-    /* border: solid 1px white */
     gap: 225px;
 }
 

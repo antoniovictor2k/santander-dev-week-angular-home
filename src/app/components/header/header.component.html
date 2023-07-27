@@ -9,8 +9,7 @@
         <div class="search-box-text">
             <input type="search" name="pesquisar" placeholder="Digite aqui sua buscar" id="search-box-input">
             <div class="search-logo">
-
-                <app-search-logo />
+                <mat-icon class="icon-search" aria-hidden="false" aria-label="Example home icon" fontIcon="search" />
             </div>
         </div>
     </div>
@@ -19,17 +18,15 @@
         <p>Saldo + limite</p>
         <div class="saldo">
             <p class="display-saldo">{{saldoFormatado}}</p>
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="visibility"></mat-icon>
         </div>
     </div>
 
     <div class="icones-box">
         <div class="user-login">
-
-            <app-user-icon />
-            <p>Entrar/Sair</p>
+            <mat-icon class="icon-user" aria-hidden="false" aria-label="Example home icon" fontIcon="person" />
+            <p class="name-user">{{accountData.name}}</p>
         </div>
-
+        
     </div>
 
 

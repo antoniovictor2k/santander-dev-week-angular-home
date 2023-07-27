@@ -1,0 +1,33 @@
+header{
+  position: fixed;
+  z-index: 9999;
+}
+
+.slider-container {
+  
+  overflow: hidden;
+  width: 700px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease;
+ 
+}
+
+.slide {
+ width: 100%
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  margin: 0 5px;
+}
