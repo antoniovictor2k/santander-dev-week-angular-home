@@ -13,6 +13,8 @@ import { CarouselItemsComponent } from './components/carousel-items/carousel-ite
 import { AmountBoxComponent } from './components/amount-box/amount-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
 	declarations: [
@@ -31,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
 		HttpClientModule,
 		BrowserAnimationsModule,
 		MatIconModule,
+		SlickCarouselModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent]

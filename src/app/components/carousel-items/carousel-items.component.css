@@ -1,56 +1,93 @@
-/* Estilos para o container principal dos cards */
-.card-slider {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-  }
+
+
+.slider-container,
+.carousel{
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    /* width: 100%; */
+    max-width: 600px; 
+    /* Defina o valor desejado de largura */
+    margin: 0 auto; /* Centralizar o carousel na página */
+    border: solid 1px red;
+}
+
+.slide{
+    border: solid 1px red;
+}
   
-  /* Estilos para cada card individual */
-  .card-box {
-    width: 100%; /* Defina a largura desejada para cada card */
-    max-width: 200px; /* Defina a largura máxima de cada card */
-    height: 250px; /* Defina a altura desejada para cada card */
-    margin: 10px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  /* Certifique-se de que os cards ocupem o espaço total do slide */
+  .card {
+    /* width: 100%; */
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
-  }
-  
-  .card-box:hover {
-    transform: scale(1.05); /* Efeito de escala ao passar o mouse sobre o card */
-  }
-  
-  /* Estilos para o título do card */
-  .card-box h3 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Estilos para a divisória entre o título e o conteúdo do card */
-  .card-divider {
-    width: 80%;
-    height: 2px;
-    background-color: #ccc;
-    margin: 10px auto;
-  }
-  
-  /* Estilos para o conteúdo do card */
-  .card-box p {
-    display: none; /* O conteúdo do card será ocultado por padrão */
-    font-size: 16px;
-    color: #666;
+
+    padding: 20px;
+
+    background-color: #f0f0f0; /* Defina a cor de fundo desejada */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Adicione sombra aos cards */
     text-align: center;
   }
   
-  /* Estilos para exibir o conteúdo do card quando ativo */
-  .card-box.active-card p {
-    display: block;
+  /* Estilize o conteúdo dentro dos cards, como título e descrição */
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Estilize os botões de navegação do carousel, se estiverem ativados */
+  /* Por exemplo, os botões "Anterior" e "Próximo" */
+  slick-prev,
+  slick-next {
+    font-size: 24px;
+    line-height: 1;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilize os botões de navegação do carousel quando o mouse passar por cima */
+  slick-prev:hover,
+  slick-next:hover {
+    color: #555;
+  }
+  
+  /* Remova o contorno padrão que aparece ao clicar nos botões */
+  slick-prev:focus,
+  slick-next:focus {
+    outline: none;
+  }
+  
+  /* Estilize os indicadores do carousel (pontos de paginação) */
+  slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  slick-dots li {
+    margin: 0 4px;
+    /* Defina o tamanho dos pontos de paginação */
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilize o ponto de páginação ativo */
+  slick-dots li.slick-active {
+    background-color: #555;
   }
   
