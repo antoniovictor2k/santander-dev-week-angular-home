@@ -19,3 +19,11 @@
 .content-card{
     margin-left: 15px;
 }
+
+.titulo-carousel,
+.titulo-news{
+   
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }

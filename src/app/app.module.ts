@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FooterComponent } from './components/footer/footer.component';
+import { NoticiasComponent } from './components/noticias/noticias.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FooterComponent } from './components/footer/footer.component';
 		CarouselItemsComponent,
 		AmountBoxComponent,
   FooterComponent,
+  NoticiasComponent,
 
 	],
 	imports: [

@@ -14,3 +14,16 @@ export interface AccountDataModel {
     };
    
 }
+export interface newsDataModel {
+
+    news:{
+        titulo: string;
+        [key: number]: {
+            icon: string;
+            description: string;
+        };
+       
+    };
+   
+}
+

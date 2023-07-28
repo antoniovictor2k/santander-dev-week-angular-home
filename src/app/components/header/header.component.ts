@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit {
      
       this.formatarSaldo();
       
-      console.log(limite+saldo)
+      // console.log(limite+saldo)
     })
     
   }
