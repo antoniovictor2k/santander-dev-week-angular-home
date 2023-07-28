@@ -1,12 +1,71 @@
-<div style="max-width: 1000px; margin: 0 auto;">
-    <ngx-slick-carousel class="carousel" #slickCarousel [config]="slideConfig">
-      <div *ngFor="let card of cards">
-        <!-- Conteúdo dos cards aqui -->
-        <div class="card">
-          <h3>{{ card.title }}</h3>
-          <p>{{ card.content }}</p>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner ">
+    <div class="carousel-item active d-flex flex-row  mb-3 ">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">PIX</h5>
+          <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+          <a href="#" class="btn btn-primary">Visitar</a>
         </div>
       </div>
-    </ngx-slick-carousel>
-    <button (click)="nextSlide()">Próximo</button>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">TNOvidade</h5>
+          <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+          <a href="#" class="btn btn-primary">Visitar</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+          <a href="#" class="btn btn-primary">Visitar</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-item d-flex flex-row  mb-3">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+          <a href="#" class="btn btn-primary">Visitar</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
   </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+    </div>
+   
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon text-light" aria-hidden="false"></span>
+    <span class=" text-light bg-dark">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
