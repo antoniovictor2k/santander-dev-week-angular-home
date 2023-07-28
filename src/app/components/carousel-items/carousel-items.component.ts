@@ -14,21 +14,28 @@ import { Subscription, timer } from 'rxjs';
   styleUrls: ['./carousel-items.component.css']
 })
 export class CarouselItemsComponent {
+
   
-  // [imagens]="[
-  //   '../../../assets/imgSlider/santander-img-2.jpg',
-  //   '../../../assets/imgSlider/santander-img-2.jpg',
-  //   '../../../assets/imgSlider/santander-img-2.jpg'
-  // ]"
   slides = [
-    { img: 'https://via.placeholder.com/600.png/09f/fff' },
-    { img: 'https://via.placeholder.com/600.png/021/fff' },
-    { img: 'https://via.placeholder.com/600.png/321/fff' },
-    { img: 'https://via.placeholder.com/600.png/422/fff' },
-    { img: 'https://via.placeholder.com/600.png/654/fff' },
+    { titulo: "Prêmios com o DinDin", icon: "emoji_events", link:'' },
+    { titulo: "Quero Investir", icon: "savings", link:'' },
+    { titulo: "Faça um consórcio", icon: "diversity_3", link:'' },
+    { titulo: "Compre seu carro", icon: "directions_car", link:'' },
+    { titulo: "Portabilidade Santander", icon: "show_chart", link:'' },
+
   ];
-  // slideConfig = { slidesToShow: 4, slidesToScroll: 4 };
- 
-  constructor() {}
-  ngOnInit(): void {}
+
+  slides_2 = [
+    { titulo: "Compre sua casa", icon: "house", link:'' },
+    { titulo: "Abra sua conta", icon: "paid", link:'' },
+    { titulo: "Empréstimo para você", icon: "real_estate_agent", link:'' },
+    { titulo: "Peça seu cartão", icon: "credit_card" },
+    { titulo: "Renegocie sua dívida ", icon: "currency_exchange ", link:'' },
+
+  ];
+
+  
+
+  constructor() { }
+  ngOnInit(): void { }
 }
