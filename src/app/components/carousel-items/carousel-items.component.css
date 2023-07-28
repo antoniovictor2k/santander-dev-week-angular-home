@@ -1,27 +1,13 @@
-.item {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 300px;
-  transition: all 0.5s ease-in-out;
+.slick-slider {
+  width: 88%;
+  margin: auto;
+  background: rgb(14, 13, 13);
 }
 
-.botoes-controle {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 8px;
-}
-
-.botoes-controle button {
-  background: #ccc;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-}
-
-.botoes-controle button.ativo {
-  background: #ff0000;
-  cursor: default;
+body .slick-prev, 
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  background: grey !important;
+  z-index: 100;
 }

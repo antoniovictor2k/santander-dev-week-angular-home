@@ -20,50 +20,32 @@ export class CarouselItemsComponent {
   //   '../../../assets/imgSlider/santander-img-2.jpg',
   //   '../../../assets/imgSlider/santander-img-2.jpg'
   // ]"
-  // // Guarda a referência do temporizador.
-  // // Assim conseguimos interromper o temporizador
-  // // a qualquer momento
-  // timerSubs!: Subscription;
-
-  // // Array com a URL das imagens que serão exibidas
-  // // no carrossel
-  // @Input() imagens: string[] = [];
-
-  // // Guarda a posição no array "imagens" que
-  // // corresponde a imagem que está sendo exibida
-  // // no carrossel
-  // private _indexImagemAtiva: number = 0;
-  // get indexImagemAtiva() {
-  //   return this._indexImagemAtiva;
-  // }
-
-  // set indexImagemAtiva(value: number) {
-  //   this._indexImagemAtiva =
-  //     value < this.imagens.length ? value : 0;
-  // }
-
-  // ngOnInit(): void {
-  //   this.iniciarTimer();
-  // }
-
-  // ngOnDestroy(): void {
-  //   this.pararTimer();
-  // }
-
-  // iniciarTimer(): void {
-  //   this.timerSubs = timer(1000).subscribe(() => {
-  //     this.ativarImagem(
-  //       this.indexImagemAtiva + 1
-  //     );
-  //   });
-  // }
-
-  // pararTimer(): void {
-  //   this.timerSubs?.unsubscribe();
-  // }
-
-  // ativarImagem(index: number): void {
-  //   this.indexImagemAtiva = index;
-  //   this.iniciarTimer();
-  // }
+  slides = [
+    { img: 'https://via.placeholder.com/600.png/09f/fff' },
+    { img: 'https://via.placeholder.com/600.png/021/fff' },
+    { img: 'https://via.placeholder.com/600.png/321/fff' },
+    { img: 'https://via.placeholder.com/600.png/422/fff' },
+    { img: 'https://via.placeholder.com/600.png/654/fff' },
+  ];
+  slideConfig = { slidesToShow: 4, slidesToScroll: 4 };
+  addSlide() {
+    this.slides.push({ img: 'http://placehold.it/350x150/777777' });
+  }
+  removeSlide() {
+    this.slides.length = this.slides.length - 1;
+  }
+  slickInit(e: any) {
+    console.log('slick initialized');
+  }
+  breakpoint(e: any) {
+    console.log('breakpoint');
+  }
+  afterChange(e: any) {
+    console.log('afterChange');
+  }
+  beforeChange(e: any) {
+    console.log('beforeChange');
+  }
+  constructor() {}
+  ngOnInit(): void {}
 }
