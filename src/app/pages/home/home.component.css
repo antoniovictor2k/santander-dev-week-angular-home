@@ -31,5 +31,15 @@
   /* Smartphone */
 
   @media (max-width: 768px) {
-   
+    .content-container{
+        margin-top: 100px;
+        margin-bottom: 60px;
+        padding: 5px 40px;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: normal;
+    }
   }

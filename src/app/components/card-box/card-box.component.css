@@ -1,7 +1,8 @@
-header{
+header {
     position: fixed;
     z-index: 9999;
-  }
+}
+
 .card-container-0 {
     background-color: #e31918;
     color: #fff;
@@ -17,7 +18,7 @@ header{
 }
 
 .card-logo {
-    
+
     margin-top: -25px;
     margin-bottom: -20px;
 
@@ -77,4 +78,84 @@ header{
 .card-limite {
     margin-top: 20px;
     margin-left: 280px;
+}
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+
+    .card-container-0 {
+        margin-top: 150px;
+        margin-left: 10px;
+        width: 360px;
+        height: 230px;
+        padding: 50px 40px;
+        border-radius: 12px;
+    }
+
+    .card-logo {
+        
+        margin-top: -85px;
+        margin-bottom: -20px;
+    
+    
+    }
+    .card-middle-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: normal;
+        gap: 0px;
+    }
+    
+    .card-number {
+        margin-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    
+    }
+    
+    .card-footer-2 {
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 12px;
+        width: 200px;
+        /* border: #fff solid 1px; */
+        /* margin-right: 80px; */
+    
+        display: block;
+        
+    }
+    
+    .card-footer-1 {
+        font-weight: 600;
+        font-size: 10px;
+    
+    
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        flex-wrap: wrap;
+    
+    }
+    
+    .footer-data {
+        margin-top: -4px;
+    
+        display: flex;
+        flex-direction: row;
+    
+        gap: 180px;
+    }
+    
+    .card-limite {
+        font-size: 12px;
+        margin-top: -10px;
+        margin-left: 220px;
+    }
 }
