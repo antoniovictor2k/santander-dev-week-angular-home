@@ -14,6 +14,7 @@ import { AmountBoxComponent } from './components/amount-box/amount-box.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 		CardBoxComponent,
 		CarouselItemsComponent,
 		AmountBoxComponent,
+  FooterComponent,
 
 	],
 	imports: [

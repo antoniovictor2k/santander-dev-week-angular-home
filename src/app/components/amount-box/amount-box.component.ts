@@ -11,10 +11,10 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class AmountBoxComponent {
   // images: string[] = ['../../../assets/imgSlider/santander-img-4.jpg', '../../../assets/imgSlider/santander-img-2.jpg', '../../../assets/imgSlider/santander-img-3.jpg']; // Add more image URLs here
   images: string[] = [
-    '../../../assets/imgSlider/santander-img-4.jpg',
-    '../../../assets/imgSlider/santander-img-3.jpg',
-    '../../../assets/imgSlider/santander-img-2.jpg',
-    '../../../assets/imgSlider/santander-img-5.jpg'
+    '../../../assets/imgSlider/santander-img-4.png',
+    '../../../assets/imgSlider/santander-img-3.png',
+    '../../../assets/imgSlider/santander-img-2.png',
+    '../../../assets/imgSlider/santander-img-1.png'
   ];
 
   currentSlide: number = 0;
