@@ -1,46 +1,78 @@
-
-
-
-.card:hover{
-transform: scale(1.05);
-cursor: pointer;
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.container-card{
+  width: 10rem; 
+  height: 8rem
 }
 
-.icon-card{
+.icon-card {
   transform: scale(2);
   color: #ff0000;
 }
-.card-title{
+
+.card-title {
   width: 145px;
   /* border: solid 1px red; */
   font-size: 12px;
 }
 
 .control-setas-border1,
-.control-setas-border2{
+.control-setas-border2 {
   width: 25px;
   height: 25px;
   padding-left: 4px;
   border-radius: 50px;
   background-color: #000;
 }
-.control-setas-border1{
+
+.control-setas-border1 {
   padding-left: 0;
   padding-right: 4px;
 }
-.carousel-control-prev{
-margin-left: -70px;
+
+.carousel-control-prev {
+  margin-left: -70px;
 }
-.carousel-control-next{
-margin-right: -70px;
+
+.carousel-control-next {
+  margin-right: -70px;
 }
 
 @media (max-width: 768px) {
 
-  .container-principal-news,
-  #carouselExampleControls{
-    display: none;
+
+
+  .div-principal-carousel {
+    display: flex;
+    width: 360px;
+  }
+  .container-card{
+    width: 7rem; 
+    height: 6rem
+  }
+  
+  .icon-card {
+    transform: scale(1.4);
+    color: #ff0000;
+  }
+  
+  .card-title {
+    width: 130px;
+   
+    font-size: 10px;
+  }
+  .card:hover {
+    transform: scale(1);
+    cursor: default;
   }
 
+  .control-setas-border1,
+  .control-setas-border2,
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
 
 }
