@@ -32,6 +32,6 @@
 
 | [<img src="https://avatars.githubusercontent.com/u/118532595?s=100&u=c9da9f4492a980cf59a1071bbbd345c8e7c123b8&v=4"><br><sub>Antonio Victor</sub>](https://github.com/antoniovictor2k) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                             [Linkedin](www.linkedin.com/in/felipe-aguiar-exe)                                             |
+|                                             [Linkedin](https://www.linkedin.com/in/antonio-victor-pereira-severiano-0aa170169/)                                             |
 
 </div>
