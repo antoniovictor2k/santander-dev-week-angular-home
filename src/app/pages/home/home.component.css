@@ -34,7 +34,7 @@
     .content-container{
         margin-top: 100px;
         margin-bottom: 60px;
-        padding: 5px 40px;
+        padding: 0px 0px;
     
         display: flex;
         flex-direction: column;
@@ -42,4 +42,23 @@
         justify-content: left;
         align-items: normal;
     }
+/* Estou aqui border vermelho */
+    .titulo-news,
+    .titulo-carousel{
+      border:solid 1px red;
+      width: 300px;
+      font-size: 24px;
+      flex-wrap: wrap;
+    }
+    .content-card{
+      margin-left: 0px;
+  }
+  .cards-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Ativar depois */
+    /* align-items: center; */
+    margin-bottom: 30px;
+}
   }

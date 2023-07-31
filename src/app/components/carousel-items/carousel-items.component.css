@@ -34,3 +34,13 @@ margin-left: -70px;
 .carousel-control-next{
 margin-right: -70px;
 }
+
+@media (max-width: 768px) {
+
+  .container-principal-news,
+  #carouselExampleControls{
+    display: none;
+  }
+
+
+}

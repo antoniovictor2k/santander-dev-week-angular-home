@@ -19,3 +19,13 @@
     font-size: 20px;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+
+    .container-principal-news,
+    .container-news{
+      display: none;
+    }
+  
+  
+  }

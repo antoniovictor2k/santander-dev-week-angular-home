@@ -31,3 +31,14 @@ header{
 input[type="radio"] {
   margin: 0 5px;
 }
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+
+  .slider-container{
+    display: none;
+  }
+
+
+}
