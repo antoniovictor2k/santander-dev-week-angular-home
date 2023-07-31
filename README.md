@@ -35,15 +35,3 @@
 |                                             [Linkedin](www.linkedin.com/in/felipe-aguiar-exe)                                             |
 
 </div>
-
-
-Projeto criado com React Native.
-
-É um app de sorteio.
-
-- Sorteio padrão (Todos os números participão do sorteio).
-- Escolher número (independente da quantidade de números, somente o número escolhido ganhará).
-- Somente número par.
-- Somente número ímpar.
-
-Link do repositorio no Github: 
