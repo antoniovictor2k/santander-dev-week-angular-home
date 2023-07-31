@@ -2,63 +2,76 @@
     position: fixed;
     z-index: 9999;
   } */
-.content-container{
-    margin-top: 100px;
-    margin-bottom: 60px;
-    padding: 5px 40px;
+.content-container {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  padding: 5px 40px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.cards-boxes{
-    display: flex;
-    margin-bottom: 30px;
+
+.cards-boxes {
+  display: flex;
+  margin-bottom: 30px;
 }
-.content-card{
-    margin-left: 15px;
+
+.content-card {
+  margin-left: 15px;
 }
 
 .titulo-carousel,
-.titulo-news{
-   
-    font-size: 2rem;
-    margin-top: 70px;
-    margin-bottom: 30px;
+.titulo-news {
+
+  font-size: 2rem;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+/* Smartphone */
+
+@media (max-width: 768px) {
+  .content-container {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    padding: 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: normal;
   }
 
-  /* Smartphone */
+  /* Estou aqui border vermelho */
+  .center-text{
 
-  @media (max-width: 768px) {
-    .content-container{
-        margin-top: 100px;
-        margin-bottom: 60px;
-        padding: 0px 0px;
-    
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: left;
-        align-items: normal;
-    }
-/* Estou aqui border vermelho */
-    .titulo-news,
-    .titulo-carousel{
-      border:solid 1px red;
-      width: 300px;
-      font-size: 24px;
-      flex-wrap: wrap;
-    }
-    .content-card{
-      margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
-  .cards-boxes{
+  
+  .titulo-news,
+  .titulo-carousel {
+    border: solid 1px red;
+    width: 300px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .content-card {
+    margin-left: 0px;
+  }
+
+  .cards-boxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* Ativar depois */
-    /* align-items: center; */
+    align-items: center;
     margin-bottom: 30px;
-}
   }
+}

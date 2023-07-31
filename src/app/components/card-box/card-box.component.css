@@ -92,14 +92,8 @@ header {
         padding: 0px 0px;
         border-radius: 8px;
 
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
     }
-    /* .card-container-0{
-        display: none;
-    } */
-
+   
     .card-logo {
         
         margin-top: -30px;
