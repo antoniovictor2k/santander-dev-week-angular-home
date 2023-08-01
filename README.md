@@ -9,9 +9,14 @@
  ### Meu Projeto:
 
 <div align="center">
+  <h3>Desktop</h3>
   	<a href="#">
       <img src=".github/assets/read.PNG" width="1200" alt="preview" />
   	</a>
+    <h3>Smartphone</h3>
+  <a href="#">
+      <img src=".github/assets/dio2.PNG" width="400" height="800" alt="preview" />
+  </a>
 </div>
 
 ### Tecnologias utilizadas: 
